@@ -1,0 +1,165 @@
+<!DOCTYPE HTML>
+<!--
+	Photon by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Photon by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<section id="header">
+				<div class="inner">
+					
+					<h1>Predicting rank for starcraft players</h1>
+					<p>Starcraft is an esports title, and the business scenario involves assessing player rankings 
+					within the game by considering a range of factors.</p>
+					
+				</div>
+			</section>
+
+		<!-- One -->
+			<section id="one" class="main style1">
+				<div class="container">
+					<div class="row gtr-150">
+						<div class="col-6 col-12-medium">
+							<header class="major">
+								<h2>Dataset</h2>
+								
+							</header>
+							<p>The dataset comprises 3,995 rows and 20 columns, which will serve as the basis for 
+							making predictions using various attributes.</p>
+							<p>Code Link:<a href="https://github.com/shriyag06/Assessment/blob/main/Starcraft%20Players.ipynb"> click here</a></p>
+						</div>
+						<div class="col-6 col-12-medium imp-medium">
+							<span class="image fit"><img src="images/image1.png" alt="" /></span>
+						</div>
+					</div>
+					
+					
+					
+					
+					<div class="row gtr-150">
+						<div class="col-6 col-12-medium">
+							<header class="major">
+								<h2>Data Validation/ Data Cleaing Techniques used</h2> </br>
+								<h3>1) Data Inconsistency </h3>
+					
+							</header>
+						
+						</div>
+							<p>In the dataset, certain columns contained inconsistent data, 
+							including symbols like '?'. To address this issue, we initially replaced 
+							these symbols with 'NaN' values and subsequently filled these missing values with the
+							median, especially since these variables 
+							exhibited a right-skewed distribution.</p>
+                       </div>
+					   </br>
+					   
+					  <div class="row gtr-150">
+						<div class="col-6 col-12-medium">
+							
+								<header class="major">
+								
+								<h3>2) Data Transformation </h3>
+					
+							</header>
+							<p>To rectify the right-skewed nature of the data, appropriate transformations like 
+							taking the cube root, square root, 
+							applying logarithm, and utilizing the Box-Cox method were implemented.The illustration
+							displays the degree of skewness within one of the characteristics.Skewed data is problematic in data analytics as 
+							it can lead to biased predictions, violate statistical assumptions, 
+							complicate model performance, distort descriptive statistics, 
+							and hinder decision-making, ultimately undermining the 
+							reliability and accuracy of insights derived from the data. 
+							Addressing skewness through suitable transformations or using 
+							robust modeling approaches is crucial to mitigate these issues.</p>
+		</div>
+		<div class="col-6 col-12-medium imp-medium">
+							<span class="image fit"><img src="images/image2.png" alt="" /></span>
+		</div>
+        </div>
+					   
+					  
+</br>					  
+<div class="row gtr-150">
+						<div class="col-6 col-12-medium">
+							
+								<header class="major">
+								
+								<h3>3) Feature Selection </h3>
+					
+							</header>
+							
+							
+							
+						</div>
+						<p>Two techniques were employed for feature selection: 
+							L1 Regularization and Information Gain. These approaches assisted in
+							pinpointing the top 10 essential features for forecasting player ranks.
+							After feature selection, standardization was applied to ensure uniform 
+							scaling across variables, preventing potential biases stemming from
+							differing measurement units.</p>
+</div>
+
+</br>
+
+<div class="row gtr-150">
+						<div class="col-6 col-12-medium">
+							
+								<header class="major">
+								
+								<h3>4) Handling Imbalanced Class </h3>
+					
+							</header>
+							<p>To address the imbalance in the target class, which corresponds 
+							to various player ranks, oversampling methods were utilized to create 
+							extra instances of the minority classes. This strategy proved to be more
+							efficient than both SMOTE and undersampling approaches.</p>
+							
+							
+						</div>
+						<div class="col-6 col-12-medium imp-medium">
+							<span class="image fit"><img src="images/image3.png" alt="" /></span>
+		</div>
+</div>
+
+
+					</div>
+					
+					
+					
+		
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+			</section>
+
+
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
